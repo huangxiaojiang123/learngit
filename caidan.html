@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>菜单</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+	}
+a{ text-decoration:none;}
+ul,li{list-style-type: none;
+	}
+
+
+.huang{width:425px;height:50px;background-color:#000;z-index:999; position:fixed;top:0px;
+	}
+.huang li{float:left;
+	}
+.huang a {text-decoration:none;color:#FFF;display:block;width:85px;line-height:50px;text-align:center;
+	}
+.huang a:hover{color: #000;background-color: #CF9;height: 50px;width: 85px;	
+	}
+.on a{background-color:#FF0;color:#666;
+	}
+
+
+.h{width:425px;height:52px;background-color:#000;margin:100px auto auto 0;
+	}
+.h li{
+	float:left;
+	}	
+.h a {
+	color:#FFF;
+	display:block;	
+	text-decoration:none;
+	width:85px;line-height:50px;text-align:center;
+	}	
+.h a:hover{
+	border-bottom-style: solid;
+	border-bottom-color: #F00;
+	border-bottom-width: 2px;
+	color:#F00;		
+	}
+.h .in a{
+	color:#F00;
+	border-bottom:solid #F00 2px;
+	}
+.x{
+	width:300px;
+	height:300px;
+	background-color:#FF0;
+	margin-top:20px;
+	position:relative;
+	}
+.x ol{
+	bottom: 9px;
+	right: 17px;
+	position: absolute;
+	}
+.x .on a,.x .on a:hover{
+	background-color: #0C6;
+	width:12px;
+	height:12px;
+}
+ol li {
+	float:left;
+	margin-left:4px;
+	width:12px;
+	height:12px;
+	background-color: #fff;	
+	}
+.x a{
+	width:12px;
+	height:12px;
+	display:block;
+	}
+.x a:hover{
+	background-color: #0C6;
+
+	}
+
+.hello{
+	width:1000px;
+	height:50px;
+	}
+.hello .list {
+	width: 100%;
+	height: 50px;
+	margin: 40px auto 0;
+	padding-top:15px;
+	position: relative;
+	background:url(head_bg.png)
+}
+.hello .list li{
+	float:left;
+	background:url(header_nav.png) no-repeat;
+    width: 66px;
+    height: 35px;
+    margin: 0 50px; 
+}
+	
+.hello .list li a{
+	display:block;
+	width:100%;
+	height:100%;
+	}	
+.hello .list li.n1{
+	background-position:0px 0px;
+	}
+.hello .list li.n2{
+	background-position:-125px 0px;
+	}
+.hello .list li.n3{
+	background-position:-250px 0px;
+	}
+.hello .list li.n4{
+	background-position:-376px 0px;
+	}
+.hello .list li.n5{
+	background-position:-502px 0px;
+	}
+.hello .list li.n6{
+	background-position:-628px 0px;
+	}
+	
+	
+.hello .list li.n1:hover{
+	background-position:0px -44px;
+	}
+.hello .list li.n2:hover{
+	background-position:-125px -44px;
+	}
+.hello .list li.n3:hover{
+	background-position:-250px -44px;
+	}
+.hello .list li.n4:hover{
+	background-position:-376px -44px;
+	}
+.hello .list li.n5:hover{
+	background-position:-502px -44px;
+	}
+.hello .list li.n6:hover{
+	background-position:-628px -44px;
+	}
+	
+	
+	
+.nav {
+	width: 759px;
+	height: 108px;
+}
+
+.nav .nav_list {
+	width: 100%;
+	height: 35px;
+	margin: 40px auto 0;
+	position: relative;
+	background:url(head_bg.png)
+}
+
+.nav .nav_list li {
+	width: 66px;
+	height: 35px;
+	margin: 0 30px;
+	float: left;
+	background: url(header_nav.png) no-repeat;
+}
+
+.nav .nav_list li a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.nav .nav_list li.n1 {
+	background-position: 0 0px;
+}
+
+.nav .nav_list li.n2 {
+	background-position: -125px 0px;
+}
+
+.nav .nav_list li.n3 {
+	background-position: -250px 0px;
+}
+
+.nav .nav_list li.n4 {
+	background-position: -377px 0px;
+}
+
+.nav .nav_list li.n5 {
+	background-position: -501px 0px;
+}
+
+.nav .nav_list li.n6 {
+	background-position: -629px 0px;
+}
+
+/*.nav ul li.on,.nav ul li.nl{ background-position:0 -44px;}*/
+
+.nav .nav_list li.n1:hover {
+	background-position: 0 -44px;
+}
+
+.nav .nav_list li.n2:hover {
+	background-position: -125px -44px;
+}
+
+.nav .nav_list li.n3:hover {
+	background-position: -250px -44px;
+}
+
+.nav .nav_list li.n4:hover {
+	background-position: -377px -44px;
+}
+
+.nav .nav_list li.n5:hover {
+	background-position: -501px -44px;
+}
+
+.nav .nav_list li.n6:hover {
+	background-position: -629px -44px;
+}	
+	
+	
+
+
+/*---- 剑 ----*/
+.fr{float:right;margin-top:-10px;}
+.fl{float:left;}
+.sword{
+	width:1145px;
+	height:362px;
+	margin:10px auto 22px;
+	position:relative;}
+.sword ul{
+	width:787px;
+	height:362px;
+	position: absolute;
+    top: 0;
+    left: 358px;
+	z-index:3;}
+.sword ul li{
+	width:39px;
+	height:362px;
+	float:left;
+	margin-right:106px;
+	cursor:pointer;}
+.s_p_m_top p{
+	padding-top: 30px;
+	/**padding-top:14px;
+	#padding-top:16px;
+	padding-top: 26px\0\9;*/
+	}
+.s_p_m_top p em,.s_p_m_bottom p em,.s_l_text em{ font-weight:bold;font-style: italic; display:block;}
+.s_p_m_top p em:hover,.s_p_m_bottom p em:hover{ color:#91141d;}
+.s_p_m_top span{
+	background:url(sword_top.png) no-repeat center right;
+  margin-top: 67px;
+	}
+.s_p_m_top.on span,.s_p_m_top span:hover{
+	background:url(sword_top.png) no-repeat center left;
+	}
+.s_p_m_bottom span{
+	background:url(sword_bottom.png) no-repeat center left;
+	margin-bottom: 60px;
+  margin-top:7px;
+	}
+.s_p_m_bottom span:hover{
+	background:url(sword_bottom.png) no-repeat center right;
+	}
+.sword ul li p{
+	width:30px;
+	height:110px;
+	color:#262626;
+	font-size:17px;
+	text-align:center;
+	margin:0 auto;
+	}	
+.sword ul li span{
+	width: 39px;
+  	height: 151px;
+	color:#ffffff;
+	font-size:12px;
+	display:block;
+	text-align:center;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+	}
+.s_p_m_top span .s_l_text{
+	width:19px;
+	margin-top:30px;
+	}
+.s_p_m_top span .s_r_text{
+	margin-top:26px;
+	width:19px;
+	font-weight:bold;
+	}
+.s_p_m_bottom span .s_l_text{
+	margin-top:13px;
+	width:19px;}
+.s_p_m_bottom span .s_r_text{
+	margin-top:20px;
+	width:19px;
+	font-weight:bold;}
+.sword_gun{ width:1145px; height:196px; position: absolute;
+  top: 83px;
+  left: 0;
+  z-index:1;}
+.sword_gun_content{
+	width: 100%;
+	height: 100%;
+	position: relative;
+ }
+.page3_bar_1_img{ 
+	width:1145px; 
+	height:196px; 
+	position:absolute; 
+	left:0; 
+	top:0; 
+	overflow:hidden; 
+	z-index:1; 
+	
+}
+.page3_bar_2_img{ 
+	width: 196px;
+    height: 196px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 227px;
+	margin-top: -98px;
+	}
+.page3_bar_2_img .sword_1{
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+}  
+.page3_bar_2_img .sword_1 .sword_2{
+	width: 100px;
+	height: 98px;
+	margin-top: -49px;
+	position: absolute;
+	overflow: hidden;
+	top:50%;
+  	transform: rotate(45deg);
+  	transition: 0.5s all;
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	
+	-ms-transform:  0.5s all;
+	-moz-transform: 0.5s all;
+	-webkit-transform: 0.5s all;
+	-o-transform: 0.5s all;
+
+}
+
+.sword_3{width: 100%; height: 100%;
+    transition: 0.5s all;
+	-ms-transform:  0.5s all;
+	-moz-transform: 0.5s all;
+	-webkit-transform: 0.5s all;
+	-o-transform: 0.5s all;  transform: rotate(-45deg);-ms-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg); position: absolute; top: 50%;margin-top: -49px;}
+
+.sword_gun:hover .sword_1 .sword_2{
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+}
+.sword_gun:hover .sword_3{margin-top: -200px;}
+
+.page3_bar_2_img .sword_1 .sword_2 img{
+	width: 918px;
+	height: 196px;
+	position: absolute;
+	top: 50%;
+	margin-top: -98px;
+}
+	
+
+
+</style>
+</head>
+
+<body>
+<div class="huang">
+<ul> 
+<li class="on"><a href="#">huang</a></li>
+<li><a href="#">xiao</a></li>
+<li><a href="#">jiang</a></li>
+<li><a href="#">ben</a></li>
+<li><a href="#">ren</a></li>
+</ul>
+</div>
+
+<div class="h">
+<ul> 
+<li class="in"><a href="#">h</a></li>
+<li><a href="#">x</a></li>
+<li><a href="#">j</a></li>
+<li><a href="#">b</a></li>
+<li><a href="#">r</a></li>
+</ul>
+</div>
+
+
+<div class="x">
+<ol>
+<li class="on"><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+</ol>
+</div>
+
+    <div class="hello">
+        <ul class="list">
+        <li class="n1">
+        <a href="index.html" title="">	
+                                       <!-- 官网首页-->
+                                    </a></li>
+        <li class="n2">
+        <a href="index.html" title="">
+                                       <!-- 官网首页-->
+                                    </a></li>
+        <li class="n3">
+        <a href="index.html" title="">
+                                       <!-- 官网首页-->
+                                    </a></li>
+        <li class="n4">
+        <a href="index.html" title="">
+                                       <!-- 官网首页-->
+                                    </a></li>
+        <li class="n5">
+        <a href="index.html" title="">
+                                       <!-- 官网首页-->
+                                    </a></li>
+        <li class="n6">
+        <a href="index.html" title="">
+                                       <!-- 官网首页-->
+                                    </a></li>
+        </ul>
+    </div>
+
+
+ <div class="nav">
+                    <ul class="nav_list">
+                        <li class="n1">
+                            <a href="index.html" title="">
+                               <!-- 官网首页-->
+                            </a>
+                        </li>
+                        <li class="n2">
+                            <a href="news.html" title="">
+                                <!--新闻公告-->
+                            </a>
+                        </li>
+                        <li class="n3">
+                            <a href="sub.html" title="">
+                                <!--游戏资料-->
+                            </a>
+                        </li>
+                        <li class="n4">
+                            <a href="" title="">
+                                <!--新手指南-->
+                            </a>
+                        </li>
+                        <li class="n5">
+                            <a href="" title="">
+                                <!--客服中心-->
+                            </a>
+                        </li>
+                        <li class="n6">
+                            <a href="" title="">
+                                <!--玩家论坛-->
+                            </a>
+                        </li>
+                    </ul>
+</div>
+
+                    <div class="sword">
+                    	<!-- 进度条 -->
+                        <div class="sword_gun">
+                            <div class="sword_gun_content">
+                                <div class="page3_bar_1_img">
+                                    <img src="sword_bg.png" alt="" width="100%">
+                                </div>
+                                <div class="page3_bar_2_img effect_13" id="page3_bar_2_img">
+                                    <div class="sword_1">
+                                        <!-- 获取宽度和高度显示进度条的长短  -->
+                                        <div class="sword_2">
+                                            <div class="sword_3">
+                                              <img src="sword_bg_hover.png" alt="" >
+                                            </div>
+                                        </div>
+                                        <!-- 获取宽度和高度显示进度条的长短 end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 进度条 end -->
+                        <!-- 显示预约人数 -->
+                        <ul>
+                        	<li class="s_p_m_top on">
+                            	<p>预约达<em>1w</em>人</p>
+                            	<span>
+                                	<div class="s_l_text fl" >
+                                    	开出新玩法
+                                    </div>
+                                    <div class="s_r_text fr" >
+                                    	星位B<br>O<br>S<br>S
+                                    </div>
+                                </span>
+                            </li>
+                            <li class="s_p_m_bottom">
+                            	<span>
+                                	<div class="s_l_text fl" >
+                                    	送出称号<br>：
+                                    </div>
+                                    <div class="s_r_text fr" >
+                                    	不良人超帅
+                                    </div>
+                                </span>
+                                <p>预约达<em>3w</em>人</p>
+                            </li>
+                            <li class="s_p_m_top">
+                            	<p>预约达<em>5w</em>人</p>
+                            	<span style="margin-top:62px;">
+                                	<div class="s_l_text fl" >
+                                    	再送坐骑<br>：
+                                    </div>
+                                    <div class="s_r_text fr" >
+                                    	预约专属坐骑
+                                    </div>
+                                </span>
+                            </li>
+                            <li class="s_p_m_bottom">
+                            	<span style="margin-top:11px;">
+                                	<div class="s_l_text fl p_size" style="margin-top:0px; font-size:12px; margin-left:9px;">
+                                    	加送价值<em>500</em>礼包
+                                    </div>
+                                </span>
+                                <p>预约达<em>10w</em>人</p>
+                            </li>
+                            <li class="s_p_m_top">
+                            	<p>预约达<em>15w</em>人</p>
+                            	<span style="margin-top:58px;">
+                                	<div class="s_l_text fl" >
+                                    	狂送翅膀<br>：
+                                    </div>
+                                    <div class="s_r_text fr" >
+                                    	预约专属翅膀
+                                    </div>
+                                </span>
+                            </li>
+                        </ul>
+                        <!-- 显示预约人数 end -->
+                    </div>
+
+</body>
+</html>
